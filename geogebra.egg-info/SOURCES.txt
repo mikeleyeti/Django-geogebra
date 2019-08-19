@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+geogebra.egg-info/PKG-INFO
+geogebra.egg-info/SOURCES.txt
+geogebra.egg-info/dependency_links.txt
+geogebra.egg-info/top_level.txt
+migrations/0001_initial.py
+migrations/0002_auto_20190819_1053.py
+migrations/__init__.py
