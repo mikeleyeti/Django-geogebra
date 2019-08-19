@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test geogebra</title>
+</head>
+<body>
+<p> Hello world !</p>
+
+{% for geogebra in geogebra_list %}
+    <h2> {{ geogebra.titre }}</h2>
+<iframe scrolling="no" title="{{ geogebra.titre }}"
+        src="https://www.geogebra.org/material/iframe/id/{{ geogebra.id_geogebra }}/width/{{ geogebra.width }}/height/{{ geogebra.height }}/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+        width="{{ geogebra.width }}px" height="{{ geogebra.height }}px" style="border:0px;"></iframe>
+{% endfor %}
+
+
+
+
+
+</body>
+</html>
